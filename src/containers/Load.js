@@ -62,38 +62,28 @@ export default class Login extends Component {
             <Modal.Title>Qual a configuração desse dispositivo?</Modal.Title>
           </Modal.Header>
 
-          <Modal.Body>
+          <Modal.Body title="Selecione uma maquina">
           <Row>
-            <Tabs activeKey={this.state.key} onSelect={this.handleSelect} id="controlled-tab-example">
-                <Tab eventKey={1} title="Alimentador">
-                  <Modal.Body>
-                    <Row>
-                        <Col md={4}>Usuario</Col>
-                        <Col md={8}>
-                          <FormGroup validationState="success">
-                            <FormControl type="text" name="usuario" value={this.state.usuario} onChange={this.handleChange} />
-                            <FormControl.Feedback/>
-                          </FormGroup>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={4}>Senha</Col>
-                        <Col md={8}>
-                          <FormGroup validationState="success">
-                            <FormControl type="password" name="senha" value={this.state.senha} onChange={this.handleChange} />
-                            <FormControl.Feedback/>
-                          </FormGroup>
-                        </Col>
-                    </Row>
-                  </Modal.Body>
-                </Tab>
-                <Tab eventKey={2} title="Perfiladira">
-                  Tab 2 content
-                </Tab>
-                <Tab eventKey={3} title="Banho">
-                  Tab 3 content
-                </Tab>
-            </Tabs>
+            <Modal.Body>
+              <Row>
+                  <Col md={4}>Usuario</Col>
+                  <Col md={8}>
+                    <FormGroup validationState="success">
+                      <FormControl type="text" name="usuario" value={this.state.usuario} onChange={this.handleChange} />
+                      <FormControl.Feedback/>
+                    </FormGroup>
+                  </Col>
+              </Row>
+              <Row>
+                  <Col md={4}>Senha</Col>
+                  <Col md={8}>
+                    <FormGroup validationState="success">
+                      <FormControl type="password" name="senha" value={this.state.senha} onChange={this.handleChange} />
+                      <FormControl.Feedback/>
+                    </FormGroup>
+                  </Col>
+              </Row>
+            </Modal.Body>
           </Row>
             
           </Modal.Body>

@@ -1,15 +1,16 @@
 import Title 			from './Title'
 import LoadingCircular 	from './LoadingCircular'
 import LoadingEllipse 	from './LoadingEllipse'
+import Tabela 			from './Table';
 
-export { LoadingEllipse }
-export { LoadingCircular }
 export { Title }
+export { LoadingCircular }
+export { LoadingEllipse }
+export { Tabela }
 
-export default { 
+export default {
+	Title: Title, 
 	LoadingCircular: LoadingCircular, 
 	LoadingEllipse: LoadingEllipse,
-	Title: Title
+	Tabela: Tabela
 }
-
-
